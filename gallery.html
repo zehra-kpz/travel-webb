@@ -14,17 +14,123 @@
         </head>
 
         <body>
-            
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container">
+                  <a href="index.html" class="navbar-brand">TravelEarth</a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a href="Blog.html" class="nav-link">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="Gallery.html" class="nav-link">Photo Gallery</a>
+                      </li>          
+                      <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+
+            <div class="col-md-12 align-self-center order-1">
+                <ul class="breadcrumb d-block text-left">
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li class="active">Photo Gallery</li>
+                </ul>
+            </div>
+
+    <!-- PHOTO GALLERY -->
+        <section id="gallery" class="py-5">
+            <div class="container">
+                <h1 class="text-center">Photo Gallery</h1>
+                <p class="text-center">Check out our photos</p>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                    <a href="images/place1.jpeg" data-toggle="lightbox">
+                    <img src="images/place1.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place2.jpeg" data-toggle="lightbox" >
+                        <img src="images/place2.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place3.jpeg" data-toggle="lightbox">
+                        <img src="images/place3.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                    <a href="images/place4.jpeg" data-toggle="lightbox" >
+                        <img src="images/place4.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place5.jpeg" data-toggle="lightbox">
+                        <img src="images/place5.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place6.jpeg" data-toggle="lightbox">
+                        <img src="images/place6.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                    <a href="images/place7.jpeg" data-toggle="lightbox" >
+                        <img src="images/place7.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place8.jpeg" data-toggle="lightbox">
+                        <img src="images/place8.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+
+                    <div class="col-md-4">
+                    <a href="images/place9.jpeg" data-toggle="lightbox">
+                        <img src="images/place9.jpeg" alt="" class="img-fluid">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
             
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
 
+            <script>
+                // Lightbox Init
+                $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+                });
+            </script>
         </body>
 
 </html>
