@@ -2,3 +2,8 @@
     background: rgb(53, 45, 45);
     color: #fff;
   }
+
+  .navbar {
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.8;
+  }
